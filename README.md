@@ -20,7 +20,7 @@ Proposta de redesign do site de uma assistência técnica de computadores e note
 - **Seções expansíveis** de serviços usando o elemento nativo de HTML "sanfona" (details e summary), sem necessidade de JavaScript
 - **Design 100% responsivo**, testado em três breakpoints (desktop, tablet e mobile)
 
-## Destaque Técnico
+## Destaque técnico
 
 O contador da seção "Sobre Nós" só começa a animar quando o usuário rola até ela — implementado com a API `IntersectionObserver`, que evita gastar processamento animando algo que ainda não está visível na tela.
 
