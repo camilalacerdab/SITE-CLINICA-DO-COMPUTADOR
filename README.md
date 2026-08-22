@@ -26,6 +26,6 @@ Os depoimentos exibidos são fictícios, criados para fins de demonstração des
 
 Autora
 
-Camila Lacerda Barbosa — estudante de Ciência da Computação, em transição para desenvolvimento de software. 
+Camila Lacerda Barbosa — estudante de Ciência da Computação. 
 
 LinkedIn: www.linkedin.com/in/camilalacerdab
