@@ -985,6 +985,7 @@ body {
 
     .hero-container {
         flex-direction: column;
+        justify-content: flex-start;
         gap: 40px;
     }
 
@@ -1079,6 +1080,14 @@ body {
         justify-content: center;
     }
 
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero-container {
+        gap: 28px;
+    }
+
     .hero-text h1 {
         font-size: 32px;
     }
@@ -1090,6 +1099,10 @@ body {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .services {
+        padding: 60px 0;
     }
 
     .services-grid {
@@ -1104,6 +1117,24 @@ body {
 
     .card-img img {
         object-position: 50% 40%;
+    }
+
+    .review-card {
+        flex: 0 0 85%;
+    }
+
+    .reviews-carousel {
+        gap: 16px;
+    }
+
+    .carousel-wrapper {
+        gap: 6px;
+    }
+
+    .carousel-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
     }
 }
 
@@ -1147,4 +1178,3 @@ body {
         right: 14px;
     }
 }
-
