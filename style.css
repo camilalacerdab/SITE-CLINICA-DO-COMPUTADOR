@@ -339,6 +339,16 @@ body {
     transform: scale(1.05);
 }
 
+/* Enquadramento individual por card (telas maiores).
+   Ajuste o valor vertical (segundo número) de cada um:
+   0% = mostra o topo da foto | 100% = mostra a base da foto */
+.services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 70%; } /* Reparos Avançados */
+.services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; } /* Substituição de Peças */
+.services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 70%; } /* Upgrades */
+.services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 70%; } /* PC Gamer */
+.services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 70%; } /* Sistemas e Segurança */
+.services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 70%; } /* Contratos Empresariais */
+
 .card-content {
     padding: 28px;
     display: flex;
@@ -466,12 +476,6 @@ body {
     margin-bottom: 16px;
 }
 
-.about-content > p:not(.about-lead) {
-    color: var(--color-text-muted);
-    font-size: 15px;
-    line-height: 1.6;
-}
-
 /* ---- Mapa ---- */
 .map-widget {
     background-color: var(--color-bg-card);
@@ -567,13 +571,6 @@ body {
     gap: 10px;
 }
 
-.rating-score {
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--color-text-white);
-}
-
-.stars,
 .stars-sm {
     color: var(--color-star);
     letter-spacing: 2px;
@@ -870,8 +867,7 @@ body {
     margin-bottom: 8px;
 }
 
-.contato-item a,
-.contato-item p {
+.contato-item a {
     display: block;
     color: var(--color-text-white);
     font-size: 15px;
@@ -944,8 +940,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-coluna a,
-.footer-coluna span {
+.footer-coluna a {
     color: var(--color-text-muted);
     text-decoration: none;
     font-size: 14px;
@@ -992,11 +987,13 @@ body {
     .hero-text {
         max-width: 100%;
         text-align: center;
+        flex: 0 1 auto;
     }
 
     .hero-image {
         width: 100%;
         justify-content: center;
+        flex: 0 1 auto;
     }
 
     .hero-image::before {
@@ -1115,9 +1112,15 @@ body {
         font-size: 28px;
     }
 
-    .card-img img {
-        object-position: 50% 40%;
-    }
+    /* Enquadramento individual por card no celular.
+       Ajuste o valor vertical (segundo número) de cada um:
+       0% = mostra o topo da foto | 100% = mostra a base da foto */
+    .services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 75%; } /* Reparos Avançados */
+    .services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 40%; } /* Substituição de Peças */
+    .services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 40%; } /* Upgrades */
+    .services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 40%; } /* PC Gamer */
+    .services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 40%; } /* Sistemas e Segurança */
+    .services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 70%; } /* Contratos Empresariais */
 
     .review-card {
         flex: 0 0 85%;
@@ -1135,6 +1138,11 @@ body {
         width: 36px;
         height: 36px;
         font-size: 20px;
+    }
+
+    .hero-image img {
+        max-height: 320px;
+        object-fit: contain;
     }
 }
 
