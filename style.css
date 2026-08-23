@@ -13,8 +13,6 @@
 
     --color-accent: #f2e379;        /* Dourado de destaque (botões, links, tags) */
     --color-accent-hover: #e5d465;  /* Dourado no hover */
-    --color-btn-bg: #d9c96e;
-    --color-btn-bg-hover: #c9b95f;
 
     --color-text-white: #ffffff;
     --color-text-light: #e2e8f0;
@@ -1094,8 +1092,7 @@ body {
         text-align: center;
     }
 
-    .services-grid,
-    .reviews-grid {
+    .services-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1104,7 +1101,12 @@ body {
     .about-content h2 {
         font-size: 28px;
     }
+
+    .card-img img {
+        object-position: 50% 40%;
+    }
 }
+
 
 /* =========================================
    13. BOTÃO FLUTUANTE DO WHATSAPP
@@ -1146,12 +1148,3 @@ body {
     }
 }
 
-
-/* =========================================
-   ALTERAÇÕES FUTURAS
-   -------------------------------------------
-   - rodapé fixo
-   - avaliações em carrossel (mostrar mais que 3, algo em torno de 6)
-   - possibilidade futura de formulário de contato
-   - revisar código para remover redundâncias
-   ========================================= */
