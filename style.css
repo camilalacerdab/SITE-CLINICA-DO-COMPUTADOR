@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
 
-/* =========================================
-   0. VARIÁVEIS DE COR
-   ========================================= */
-
 :root {
-    --color-bg-primary: #0b2436;    /* Tom de azul elegante da marca */
+    --color-bg-primary: #0b2436;    /* Tom de azul da marca */
     --color-bg-dark: #080c12;       /* Fundo mais escuro (header, hero, about, footer) */
     --color-bg-darker: #061824;     /* Fundo dos cards de serviço */
     --color-bg-card: #0f172a;       /* Fundo dos feature-cards e seção de reviews */
@@ -17,8 +13,8 @@
     --color-text-white: #ffffff;
     --color-text-light: #e2e8f0;
     --color-text-muted: #94a3b8;
+    --color-text-faint: #94a3b8;    /* Texto secundário sobre fundo escuro (footer) */
     --color-text-review: #cbd5e1;
-    --color-text-faint: #777777;    /* Texto secundário do footer */
 
     --color-text-dark: #080c12;     /* Texto escuro sobre fundo dourado */
 
@@ -42,11 +38,6 @@
     --color-shadow-accent: rgba(242, 227, 121, 0.2);
     --color-shadow-card-hover: rgba(242, 227, 121, 0.15);
 }
-
-
-/* =========================================
-   1. RESET E ESTILOS GERAIS
-   ========================================= */
 
 * {
     margin: 0;
@@ -73,9 +64,7 @@ body {
 }
 
 
-/* =========================================
-   2. BOTÕES
-   ========================================= */
+/* BOTÕES */
 
 .btn {
     display: inline-block;
@@ -97,9 +86,7 @@ body {
 }
 
 
-/* =========================================
-   3. CABEÇALHO / HEADER
-   ========================================= */
+/* HEADER */
 
 .header {
     padding: 24px 0;
@@ -165,9 +152,7 @@ body {
 }
 
 
-/* =========================================
-   4. SEÇÃO HERO
-   ========================================= */
+/* HERO */
 
 .hero {
     min-height: calc(100vh - 120px);
@@ -270,9 +255,7 @@ body {
 }
 
 
-/* =========================================
-   5. SEÇÃO DE SERVIÇOS
-   ========================================= */
+/* SERVIÇOS */
 
 .services {
     padding: 90px 0;
@@ -300,7 +283,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -331,7 +314,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 70%;
     transition: transform 0.4s ease;
 }
 
@@ -342,15 +324,17 @@ body {
 /* Enquadramento individual por card (telas maiores).
    Ajuste o valor vertical (segundo número) de cada um:
    0% = mostra o topo da foto | 100% = mostra a base da foto */
-.services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 70%; } /* Reparos Avançados */
-.services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; } /* Substituição de Peças */
-.services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 70%; } /* Upgrades */
-.services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 70%; } /* PC Gamer */
-.services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 70%; } /* Sistemas e Segurança */
-.services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 70%; } /* Contratos Empresariais */
+.services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 50%; } /* PC Gamer */
+.services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; }  /* Carcaça */
+.services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 30%; }  /* Reparo de Placa Mãe */
+.services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 50%; }  /* Substituição de Tela */
+.services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 60%; }  /* Substituição de Teclado */
+.services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 100%; }  /* Upgrades */
+.services-grid .service-card:nth-child(7) .card-img img { object-position: 50% 70%; }  /* Sistemas e Segurança */
+.services-grid .service-card:nth-child(8) .card-img img { object-position: 50% 70%; }  /* Contratos Empresariais */
 
 .card-content {
-    padding: 28px;
+    padding: 22px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -365,16 +349,17 @@ body {
 
 .service-card h3 {
     color: var(--color-text-white);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-top: 4px;
+    line-height: 1.3;
 }
 
 .service-short {
     color: var(--color-text-muted);
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .service-card details {
@@ -420,7 +405,6 @@ body {
     content: "+";
     font-size: 18px;
     color: var(--color-accent);
-    transition: transform 0.3s ease;
 }
 
 .service-card details[open] summary::after {
@@ -444,9 +428,7 @@ body {
 }
 
 
-/* =========================================
-   6. SEÇÃO SOBRE NÓS E MAPA
-   ========================================= */
+/* SEÇÃO SOBRE NÓS E MAPA */
 
 .about {
     padding: 90px 0;
@@ -476,7 +458,7 @@ body {
     margin-bottom: 16px;
 }
 
-/* ---- Mapa ---- */
+/* Mapa */
 .map-widget {
     background-color: var(--color-bg-card);
     border: 1px solid var(--color-border-subtle);
@@ -503,7 +485,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    outline: none;
 }
 
 .map-tab:hover {
@@ -528,9 +509,7 @@ body {
 }
 
 
-/* =========================================
-   7. SEÇÃO DE AVALIAÇÕES
-   ========================================= */
+/* SEÇÃO DE AVALIAÇÕES */
 
 .reviews {
     padding: 90px 0;
@@ -672,9 +651,7 @@ body {
 }
 
 
-/* =========================================
-   8. ANIMAÇÕES
-   ========================================= */
+/* ANIMAÇÕES */
 
 @keyframes fadeIn {
     from {
@@ -688,9 +665,7 @@ body {
 }
 
 
-/* =========================================
-   9. TIMELINE
-   ========================================= */
+/* TIMELINE */
 
 .timeline {
     position: relative;
@@ -761,9 +736,7 @@ body {
 }
 
 
-/* =========================================
-   10. SEÇÃO CONTATO
-   ========================================= */
+/* SEÇÃO CONTATO */
 
 .contato {
     width: 90%;
@@ -885,9 +858,7 @@ body {
 }
 
 
-/* =========================================
-   11. FOOTER
-   ========================================= */
+/* FOOTER */
 
 .footer {
     background-color: var(--color-bg-dark);
@@ -968,9 +939,79 @@ body {
 }
 
 
-/* =========================================
-   12. RESPONSIVIDADE
-   ========================================= */
+/* BOTÃO FLUTUANTE DO WHATSAPP */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    z-index: 150;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+}
+
+
+/* UX: CONTROLE DE SELEÇÃO E ARRASTE */
+
+/* Bloqueia a seleção apenas da interface (Botões, menus, abas, setas) */
+.logo,
+.menu a,
+.btn,
+.tag-highlight,
+.section-tag,
+.service-number,
+.service-card summary,
+.map-tab,
+.google-badge,
+.carousel-arrow,
+.avatar,
+.contato-topo span,
+.contato-whatsapp,
+.contato-item span,
+.footer-logo,
+.footer-coluna h3,
+.whatsapp-float {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Impede o "arraste fantasma" das imagens, mas permite salvar pelo botão direito */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1100px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 860px) {
     .hero {
@@ -1112,15 +1153,21 @@ body {
         font-size: 28px;
     }
 
+    .card-img {
+        height: 240px;
+    }
+
     /* Enquadramento individual por card no celular.
        Ajuste o valor vertical (segundo número) de cada um:
        0% = mostra o topo da foto | 100% = mostra a base da foto */
-    .services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 75%; } /* Reparos Avançados */
-    .services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 40%; } /* Substituição de Peças */
-    .services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 40%; } /* Upgrades */
-    .services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 40%; } /* PC Gamer */
-    .services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 40%; } /* Sistemas e Segurança */
-    .services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 70%; } /* Contratos Empresariais */
+    .services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 95%; }  /* PC Gamer */
+    .services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; }  /* Carcaça */
+    .services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 45%; }  /* Reparo de Placa Mãe */
+    .services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 40%; }  /* Substituição de Tela */
+    .services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 55%; }  /* Substituição de Teclado */
+    .services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 55%; }  /* Upgrades */
+    .services-grid .service-card:nth-child(7) .card-img img { object-position: 50% 90%; }  /* Sistemas e Segurança */
+    .services-grid .service-card:nth-child(8) .card-img img { object-position: 50% 60%; }  /* Contratos Empresariais */
 
     .review-card {
         flex: 0 0 85%;
@@ -1144,41 +1191,7 @@ body {
         max-height: 320px;
         object-fit: contain;
     }
-}
 
-
-/* =========================================
-   13. BOTÃO FLUTUANTE DO WHATSAPP
-   ========================================= */
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 46px;
-    height: 46px;
-    background-color: #25d366;
-    color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-    z-index: 150;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.08);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-}
-
-.whatsapp-float svg {
-    width: 28px;
-    height: 28px;
-}
-
-@media (max-width: 600px) {
     .whatsapp-float {
         width: 42px;
         height: 42px;
