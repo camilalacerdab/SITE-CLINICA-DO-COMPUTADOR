@@ -19,7 +19,7 @@ O projeto foi desenvolvido com foco em apresentar os serviços da empresa, suas 
 - **Linha do tempo animada** com contador numérico (anos de atuação, clientes atendidos, atendimentos realizados), ativado via `IntersectionObserver` quando a seção entra na tela
 - **Carrossel de avaliações** com navegação por setas
 - **Botão flutuante do WhatsApp**, fixo na tela, com link direto para conversa
-- **Seções expansíveis** de serviços usando o elemento nativo de HTML "sanfona" (details e summary), sem necessidade de JavaScript
+- **Seções expansíveis** de serviços usando o elemento nativo de HTML `details` e `summary`, sem necessidade de JavaScript
 - **Design 100% responsivo**, testado em três breakpoints (desktop, tablet e mobile)
 
 ## Destaque técnico
@@ -29,4 +29,5 @@ O contador da seção "Sobre Nós" só começa a animar quando o usuário rola a
 ## Autora
 
 Camila Lacerda Barbosa — estudante de Ciência da Computação, em transição para desenvolvimento de software.
+
 [LinkedIn](https://linkedin.com/in/camilalacerdab) · [GitHub](https://github.com/camilalacerdab)
