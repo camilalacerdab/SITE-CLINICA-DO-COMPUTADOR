@@ -15,7 +15,6 @@
     --color-text-muted: #94a3b8;
     --color-text-faint: #94a3b8;    /* Texto secundário sobre fundo escuro (footer) */
     --color-text-review: #cbd5e1;
-
     --color-text-dark: #080c12;     /* Texto escuro sobre fundo dourado */
 
     --color-star: #ffc107;
@@ -55,6 +54,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
 }
 
 .container {
@@ -63,9 +63,17 @@ body {
     margin: 0 auto;
 }
 
+/* ACESSIBILIDADE GERAL (Foco pelo teclado) */
+a:focus-visible, 
+button:focus-visible, 
+.btn:focus-visible, 
+summary:focus-visible, 
+.map-tab:focus-visible {
+    outline: 2px dashed var(--color-accent);
+    outline-offset: 4px;
+}
 
 /* BOTÕES */
-
 .btn {
     display: inline-block;
     padding: 16px 32px;
@@ -77,6 +85,8 @@ body {
     font-size: 16px;
     border-radius: 8px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
 }
 
 .btn:hover {
@@ -85,9 +95,7 @@ body {
     transform: translateY(-3px);
 }
 
-
 /* HEADER */
-
 .header {
     padding: 24px 0;
     background-color: var(--color-bg-dark);
@@ -151,9 +159,7 @@ body {
     width: 100%;
 }
 
-
 /* HERO */
-
 .hero {
     min-height: calc(100vh - 120px);
     display: flex;
@@ -254,9 +260,7 @@ body {
     box-shadow: 0 22px 45px var(--color-shadow-hover);
 }
 
-
 /* SERVIÇOS */
-
 .services {
     padding: 90px 0;
     background-color: var(--color-bg-primary);
@@ -321,17 +325,15 @@ body {
     transform: scale(1.05);
 }
 
-/* Enquadramento individual por card (telas maiores).
-   Ajuste o valor vertical (segundo número) de cada um:
-   0% = mostra o topo da foto | 100% = mostra a base da foto */
-.services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 50%; } /* PC Gamer */
-.services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; }  /* Carcaça */
-.services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 30%; }  /* Reparo de Placa Mãe */
-.services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 50%; }  /* Substituição de Tela */
-.services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 60%; }  /* Substituição de Teclado */
-.services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 100%; }  /* Upgrades */
-.services-grid .service-card:nth-child(7) .card-img img { object-position: 50% 70%; }  /* Sistemas e Segurança */
-.services-grid .service-card:nth-child(8) .card-img img { object-position: 50% 70%; }  /* Contratos Empresariais */
+/* Enquadramento individual */
+.services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 35%; }
+.services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; }
+.services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 100%; }
+.services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 50%; }
+.services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 80%; }
+.services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 100%; }
+.services-grid .service-card:nth-child(7) .card-img img { object-position: 50% 45%; }
+.services-grid .service-card:nth-child(8) .card-img img { object-position: 50% 70%; }
 
 .card-content {
     padding: 22px;
@@ -427,9 +429,7 @@ body {
     animation: fadeIn 0.3s ease-in-out;
 }
 
-
-/* SEÇÃO SOBRE NÓS E MAPA */
-
+/* SOBRE NÓS E MAPA */
 .about {
     padding: 90px 0;
     background-color: var(--color-bg-dark);
@@ -458,7 +458,6 @@ body {
     margin-bottom: 16px;
 }
 
-/* Mapa */
 .map-widget {
     background-color: var(--color-bg-card);
     border: 1px solid var(--color-border-subtle);
@@ -506,11 +505,10 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+    border: none;
 }
 
-
-/* SEÇÃO DE AVALIAÇÕES */
-
+/* AVALIAÇÕES */
 .reviews {
     padding: 90px 0;
     background-color: var(--color-bg-card);
@@ -650,9 +648,7 @@ body {
     font-style: italic;
 }
 
-
 /* ANIMAÇÕES */
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -664,9 +660,7 @@ body {
     }
 }
 
-
 /* TIMELINE */
-
 .timeline {
     position: relative;
     display: grid;
@@ -735,9 +729,7 @@ body {
     margin-top: 4px;
 }
 
-
-/* SEÇÃO CONTATO */
-
+/* CONTATO */
 .contato {
     width: 90%;
     max-width: 1200px;
@@ -857,9 +849,7 @@ body {
     color: var(--color-accent);
 }
 
-
 /* FOOTER */
-
 .footer {
     background-color: var(--color-bg-dark);
     border-top: 1px solid var(--color-border-panel);
@@ -938,9 +928,7 @@ body {
     margin: 0;
 }
 
-
 /* BOTÃO FLUTUANTE DO WHATSAPP */
-
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -968,26 +956,19 @@ body {
     height: 28px;
 }
 
-
 /* UX: CONTROLE DE SELEÇÃO E ARRASTE */
-
-/* Bloqueia a seleção apenas da interface (Botões, menus, abas, setas) */
+/* Restringido apenas à interface visual. A seleção de textos (títulos e endereços) foi liberada para melhor acessibilidade. */
 .logo,
 .menu a,
 .btn,
 .tag-highlight,
 .section-tag,
 .service-number,
-.service-card summary,
 .map-tab,
 .google-badge,
 .carousel-arrow,
 .avatar,
-.contato-topo span,
 .contato-whatsapp,
-.contato-item span,
-.footer-logo,
-.footer-coluna h3,
 .whatsapp-float {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -995,7 +976,7 @@ body {
     user-select: none;
 }
 
-/* Impede o "arraste fantasma" das imagens, mas permite salvar pelo botão direito */
+/* Impede o "arraste fantasma" das imagens */
 img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -1004,9 +985,7 @@ img {
     user-drag: none;
 }
 
-
 /* RESPONSIVIDADE */
-
 @media (max-width: 1100px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1157,17 +1136,14 @@ img {
         height: 240px;
     }
 
-    /* Enquadramento individual por card no celular.
-       Ajuste o valor vertical (segundo número) de cada um:
-       0% = mostra o topo da foto | 100% = mostra a base da foto */
-    .services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 95%; }  /* PC Gamer */
-    .services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; }  /* Carcaça */
-    .services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 45%; }  /* Reparo de Placa Mãe */
-    .services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 40%; }  /* Substituição de Tela */
-    .services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 55%; }  /* Substituição de Teclado */
-    .services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 55%; }  /* Upgrades */
-    .services-grid .service-card:nth-child(7) .card-img img { object-position: 50% 90%; }  /* Sistemas e Segurança */
-    .services-grid .service-card:nth-child(8) .card-img img { object-position: 50% 60%; }  /* Contratos Empresariais */
+    .services-grid .service-card:nth-child(1) .card-img img { object-position: 50% 30%; }
+    .services-grid .service-card:nth-child(2) .card-img img { object-position: 50% 70%; }
+    .services-grid .service-card:nth-child(3) .card-img img { object-position: 50% 10%; }
+    .services-grid .service-card:nth-child(4) .card-img img { object-position: 50% 40%; }
+    .services-grid .service-card:nth-child(5) .card-img img { object-position: 50% 65%; }
+    .services-grid .service-card:nth-child(6) .card-img img { object-position: 50% 60%; }
+    .services-grid .service-card:nth-child(7) .card-img img { object-position: 50% 30%; }
+    .services-grid .service-card:nth-child(8) .card-img img { object-position: 50% 60%; }
 
     .review-card {
         flex: 0 0 85%;
