@@ -4,7 +4,7 @@ Site institucional desenvolvido para a Clínica do Computador, empresa especiali
 
 O projeto foi desenvolvido com foco em apresentar os serviços da empresa, suas unidades, informações institucionais e formas de contato, utilizando uma interface responsiva e adaptada para diferentes dispositivos.
 
-🔗 **Demo:** [clinicadocomputador.net/teste](https://www.clinicadocomputador.net/teste/)
+🔗 **Demo / Site Oficial:** [clinicadocomputador.com.br](https://www.clinicadocomputador.com.br/)
 
 ## Tecnologias
 
@@ -22,12 +22,12 @@ O projeto foi desenvolvido com foco em apresentar os serviços da empresa, suas 
 - **Seções expansíveis** de serviços usando o elemento nativo de HTML `details` e `summary`, sem necessidade de JavaScript
 - **Design 100% responsivo**, testado em três breakpoints (desktop, tablet e mobile)
 
-## Destaque técnico
+## Otimização
 
 O contador da seção "Sobre Nós" só começa a animar quando o usuário rola até ela — implementado com a API `IntersectionObserver`, que evita gastar processamento animando algo que ainda não está visível na tela.
 
 ## Autora
 
-Camila Lacerda Barbosa — estudante de Ciência da Computação, em transição para desenvolvimento de software.
+Camila Lacerda Barbosa
 
 [LinkedIn](https://linkedin.com/in/camilalacerdab) · [GitHub](https://github.com/camilalacerdab)
