@@ -1,6 +1,8 @@
 # Clínica do Computador — Site Institucional
 
-Proposta de redesign do site de uma assistência técnica de computadores e notebooks em Salvador e Lauro de Freitas (BA), onde atuo como estagiária de suporte técnico. O site original não foi desenvolvido por mim — este projeto é um estudo pessoal, recriando o design e a estrutura da página como forma de aplicar meus conhecimentos de front-end num contexto de negócio real. Ainda está em fase de testes, sem substituir o site oficial da empresa.
+Site institucional desenvolvido para a Clínica do Computador, empresa especializada em assistência técnica de computadores e notebooks, com unidades em Salvador e Lauro de Freitas (BA).
+
+O projeto foi desenvolvido com foco em apresentar os serviços da empresa, suas unidades, informações institucionais e formas de contato, utilizando uma interface responsiva e adaptada para diferentes dispositivos.
 
 🔗 **Demo:** [clinicadocomputador.net/teste](https://www.clinicadocomputador.net/teste/)
 
@@ -23,10 +25,6 @@ Proposta de redesign do site de uma assistência técnica de computadores e note
 ## Destaque técnico
 
 O contador da seção "Sobre Nós" só começa a animar quando o usuário rola até ela — implementado com a API `IntersectionObserver`, que evita gastar processamento animando algo que ainda não está visível na tela.
-
-## Sobre os dados
-
-Os depoimentos exibidos são fictícios, criados para fins de demonstração deste projeto de portfólio — não representam avaliações reais de clientes.
 
 ## Autora
 
