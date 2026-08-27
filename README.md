@@ -4,7 +4,7 @@ Site institucional desenvolvido para a Clínica do Computador, empresa especiali
 
 O projeto foi desenvolvido com foco em apresentar os serviços da empresa, suas unidades, informações institucionais e formas de contato, utilizando uma interface responsiva e adaptada para diferentes dispositivos.
 
-🔗 **Demo / Site Oficial:** [clinicadocomputador.com.br](https://www.clinicadocomputador.com.br/)
+🔗 **Site Oficial:** [clinicadocomputador.com.br](https://www.clinicadocomputador.com.br/)
 
 ## Tecnologias
 
