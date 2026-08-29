@@ -15,7 +15,7 @@
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Assistência técnica especializada em computadores e notebooks em Salvador e Lauro de Freitas. Mais de 15 anos de experiência: reparos, upgrades, formatação e manutenção. Orçamento rápido pelo WhatsApp.">
+    <meta name="description" content="Assistência técnica especializada em computadores e notebooks em Salvador e Lauro de Freitas. Mais de 15 anos de experiência: consertos, reparos, upgrades, formatação e manutenção. Orçamento rápido pelo WhatsApp.">
 
     <link rel="canonical" href="https://clinicadocomputador.com.br/">
 
@@ -23,7 +23,7 @@
     <meta property="og:site_name" content="Clínica do Computador">
     <meta property="og:title" content="Clínica do Computador - Assistência Técnica">
     <meta property="og:description" content="Assistência técnica especializada em computadores e notebooks em Salvador e Lauro de Freitas. Mais de 15 anos de experiência.">
-    <meta property="og:image" content="https://clinicadocomputador.com.br/assets/HERO.png">
+    <meta property="og:image" content="https://clinicadocomputador.com.br/assets/HERO.webp">
     <meta property="og:url" content="https://clinicadocomputador.com.br/">
     <meta property="og:locale" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
@@ -42,28 +42,82 @@
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ComputerStore",
+  "name": "Clínica do Computador",
+  "image": "https://clinicadocomputador.com.br/assets/HERO.webp",
+  "telephone": "+557130165743",
+  "url": "https://clinicadocomputador.com.br/",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
     {
-      "@context": "https://schema.org",
-      "@type": "ComputerStore",
-      "name": "Clínica do Computador",
-      "image": "https://clinicadocomputador.com.br/assets/HERO.png",
-      "telephone": "+557130165743",
-      "url": "https://clinicadocomputador.com.br/",
-      "priceRange": "$$",
-      "location": [
-        {
-          "@type": "Place",
-          "name": "Salvador",
-          "address": { "@type": "PostalAddress", "addressLocality": "Salvador", "addressRegion": "BA", "addressCountry": "BR" }
-        },
-        {
-          "@type": "Place",
-          "name": "Lauro de Freitas",
-          "address": { "@type": "PostalAddress", "addressLocality": "Lauro de Freitas", "addressRegion": "BA", "addressCountry": "BR" }
-        }
-      ]
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
     }
-    </script>
+  ],
+  "location": [
+  {
+    "@type": "Place",
+    "name": "Salvador",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Salvador",
+      "addressRegion": "BA",
+      "addressCountry": "BR"
+    },
+    "areaServed": ["Itapuã", "Salvador"]
+  },
+  {
+    "@type": "Place",
+    "name": "Lauro de Freitas",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lauro de Freitas",
+      "addressRegion": "BA",
+      "addressCountry": "BR"
+    },
+    "areaServed": ["Vilas do Atlântico", "Lauro de Freitas"]
+  }
+],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Montagem e manutenção de PC Gamer" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Reparo de carcaça de notebook" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Reparo de placa-mãe de notebook" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Troca de tela de notebook" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Substituição de teclado e peças" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Upgrade de SSD e memória RAM" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Formatação e recuperação de dados" }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": "Contratos de suporte de TI empresarial" }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -95,8 +149,9 @@
                         de experiência em assistência técnica.
                     </h1>
                     <p>
-                        Manutenção e reparos para computadores e notebooks
-                        com atendimento especializado.
+                Conserto e manutenção de computadores e notebooks em Salvador
+                (Itapuã) e Lauro de Freitas (Vilas do Atlântico). Atendimento
+                rápido com equipe especializada.
                     </p>
                     <a href="https://api.whatsapp.com/send?phone=5571985481554&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                        class="btn btn-primary"
@@ -107,7 +162,7 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="assets/HERO.png" alt="Notebook em manutenção" fetchpriority="high">
+                    <img src="assets/HERO.webp" alt="Notebook em manutenção" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -123,7 +178,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/pcgamer.png" alt="PC Gamer" loading="lazy" width="400" height="230">
+                            <img src="assets/pcgamer.webp" alt="Montagem e manutenção de PC Gamer em Salvador e Lauro de Freitas" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">01 —</span> PC Gamer</h3>
@@ -139,7 +194,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/carcacaquebrada.png" alt="Reparos Avançados em Carcaça" loading="lazy" width="400" height="230">
+                            <img src="assets/carcacaquebrada.webp" alt="Reparo de carcaça e dobradiça quebrada de notebook" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">02 —</span> Reparo em Carcaça</h3>
@@ -155,7 +210,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/reparoplaca.jpeg" alt="Reparo em Placa Mãe Notebook" loading="lazy" width="400" height="230">
+                            <img src="assets/reparoplaca.webp" alt="Diagnóstico, conserto e reparo em Placa Mãe Notebook" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">03 —</span> Reparo Placa Mãe</h3>
@@ -171,7 +226,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/tela.jpeg" alt="Substituição de tela" loading="lazy" width="400" height="230">
+                            <img src="assets/tela.webp" alt="Troca de tela quebrada ou manchada de notebook em Salvador e Lauro de Freitas" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">04 —</span> Substituição de Tela</h3>
@@ -187,7 +242,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/teclado.png" alt="Substituição de teclado" loading="lazy" width="400" height="230">
+                            <img src="assets/teclado.webp" alt="Troca de teclado e peças para notebook" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">05 —</span> Substituição de Peças</h3>
@@ -203,7 +258,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/SSD.jpeg" alt="Upgrades" loading="lazy" width="400" height="230">
+                            <img src="assets/SSD.webp" alt="Upgrade de SSD e memória RAM para notebook ficar mais rápido" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">06 —</span> Upgrade e Desempenho</h3>
@@ -219,7 +274,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/formatacao.png" alt="Sistemas e segurança" loading="lazy" width="400" height="230">
+                            <img src="assets/formatacao.webp" alt="Instalação de sistemas operacionais e programas, antivírus, recuperação de dados e segurança para computadores" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">07 —</span> Sistemas e Segurança</h3>
@@ -235,7 +290,7 @@
 
                     <div class="service-card">
                         <div class="card-img">
-                            <img src="assets/empresa.jpeg" alt="Recuperação e empresas" loading="lazy" width="400" height="230">
+                            <img src="assets/empresa.webp" alt="Suporte de TI e contratos empresariais de assistência técnica em Salvador, Lauro de Freitas e Região" loading="lazy" width="400" height="230">
                         </div>
                         <div class="card-content">
                             <h3><span class="service-number">08 —</span> Contratos Empresariais</h3>
@@ -260,7 +315,7 @@
                         <span class="section-tag">SOBRE NÓS</span>
                         <h2>Conectando tecnologia e eficiência em Salvador e Lauro de Freitas</h2>
                         <p class="about-lead">
-                            Um equipamento parado significa tempo perdido, prazos apertados e estresse desnecessário. Por isso, trabalhamos com diagnóstico preciso e processo ágil, devolvendo produtividade ao seu negócio e tranquilidade à sua rotina.
+                            Somos referência em assistência técnica de computadores e notebooks em Salvador e Lauro de Freitas. Um equipamento parado significa tempo perdido, prazos apertados e estresse desnecessário. Por isso, trabalhamos com diagnóstico preciso, processo ágil e total transparência em cada etapa do serviço, devolvendo produtividade ao seu negócio e tranquilidade à sua rotina.
                         </p>
                     </div>
 
